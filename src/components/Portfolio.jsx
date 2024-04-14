@@ -8,7 +8,7 @@ function Portfolio() {
             <p>Below are the projects I have worked on over the University of Richmond Full-Stack bootcamp. Please click on my github link to see the code of each project in my repositories.</p>
         </div>
         <Projects /></>>
-    );
+    )
 }
 
 export default Portfolio;

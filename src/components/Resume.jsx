@@ -7,7 +7,9 @@ function Resume() {
     <h1 className="resume">Devin Belle's Resume</h1>
         <hr></hr>
 
-    <iframe src={MyResume} width="100%" height="800px"></iframe>
+    <ReactPDF file={{data: MyResume}}/>
+
+    {/* <iframe src={MyResume} width="100%" height="800px"></iframe> */}
 
        
 </section>

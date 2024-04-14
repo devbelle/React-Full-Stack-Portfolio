@@ -7,9 +7,9 @@ import Navigation from "./components/Navigation";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import Header from "./components/Header";
-import Projects from "./components/Projects";
+import Projects from "./components/Project";
 import Resume from "./components/Resume";
-import Portfolio from "./components/Portfolio";
+//import Portfolio from "./components/Portfolio";
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
       if(currentPage == "About") {
         return <About />
       } else if (currentPage == "Portfolio") {
-        return <Portfolio />
+        return <Projects />
       } else if (currentPage == "Resume") {
         return <Resume />
       } else if (currentPage == "Contact") {
