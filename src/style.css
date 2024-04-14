@@ -1,0 +1,125 @@
+/*Changes background color for contact listed items when cursor is above them.*/
+h3:hover{
+    background-color: #772014;
+  }
+
+/*Changes the font size of contact list items once clicked and makes a small shadow on them.*/
+h3:active{
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+  }
+
+/*The about me section that is pushed out from to the left to keep out of the navigation bar on the left-hand side of the screen.*/
+.about-me{
+    margin-left:200px;
+    padding-top: 20px;
+}
+
+/*The contact-me section pushed out of the way of the header navigation bar.*/
+.contact-me{
+    margin-left: 200px;
+}
+
+/*Displays the contact section in a row and given padding to spread out from each other.*/
+.contact-links > li{
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+/*The project section that has all of the content displayed as a grid to be put into columns and rows.*/
+.content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*My portrait image displayed in the header navigation bar.*/
+.devin{
+    height: 200px;
+    width: 150px;
+    justify-content: center;
+} 
+
+/*Navigation bar links that spaces out each listed item and removes the bullet points.*/
+.portfolio-links{
+    list-style: none;
+    line-height: 30px;
+    }
+
+/*When the cursor is above a project, the project box shadow goes dark blue.*/
+.project:hover{
+    box-shadow: 10px 10px darkblue;
+}
+
+/*Keeps the image file inside of the div containter.*/
+.project > img{
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+}
+
+/*Keeps the horiseon project image inside of the div container.*/
+#vision > img{
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+}
+
+/*Makes the box shadow turn dark blue when above the horiseon project image.*/
+#vision:hover{
+    box-shadow: 10px 10px darkblue;
+  }
+
+/*Changes the box shadow to the same color as the background to simulate an object being pressed.*/
+#vision:active{
+    box-shadow: 5px 5px beige;
+  }
+
+/*media screen change to phone display*/
+@media screen and (max-width: 768px) {
+    /*Entire background in webpage changes to whitesmoke color when media screen is changed.*/
+    *{
+      background-color: whitesmoke;
+
+    }
+    /*Contact list titles change padding for spacing on a smaller screen.*/ 
+    h3{
+        padding: 10px;
+    }
+    /*Changes grid layout to make all project items in one column.*/
+    .content{
+        display:block;
+        grid-template-columns: 1fr 1fr
+    }
+    /*Project containers change size to match smaller screen.*/
+    .project{
+        width: 250px;
+        height: 125px; 
+        border-width: 5px; 
+    }
+    /*Construction image inside of project container changes size to match new display.*/
+    .project > img{
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+    /*Horiseon project changes size to match with smaller display.*/
+    #vision{ 
+        height: 175px;
+        width: 400px;   
+    }
+    /*Horiseon image changes to fill on the smaller div container.*/
+    #vision > img{
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+    }
+    /*Header navigation outline changes color for the smaller screen.*/
+    .side-nav{
+        background-color: #13293d;
+    }
+    /*Quote underneath header image changes color to match smaller display.*/
+    #title-quote{
+        background-color: #13293d;
+    }
+}

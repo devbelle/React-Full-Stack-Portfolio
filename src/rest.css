@@ -1,0 +1,97 @@
+
+/*Applies full background color to my portfolio.*/
+*{
+    box-sizing: border-box;
+    background: beige;
+}
+
+/*My name underneath my profile image to show who the webpage is made by.*/
+h1{
+    text-align: center;
+}
+
+/*Titles for my contact list at the bottom.*/
+h3{
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+}
+
+/*The font family for the entire document.*/
+main{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+}
+
+/*The home section the start of my webpage. Keeps the title in proportion to header-image.*/
+.background-image{
+    display: flex;
+}
+
+/*The unfinished projects I have yet to work on all filled with under contruction images.*/
+.project{
+    border-color: black;
+    border-style: groove;
+    border-width: 5px;
+    width: 500px;
+    height:250px;
+    margin: 25px;
+    margin-left: 200px;
+    box-shadow: 10px 10px lightblue;
+}
+
+/*Header navigation bar given a fixed position to the left of my page.*/
+.side-nav{
+    display: flex;
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 5px;
+    background-color: chocolate;
+    overflow: auto;
+}
+
+/*Image of myself rock-climbing.*/
+.top-img{
+    margin-left:200px;
+    height: 720px;
+    width: 1080px; 
+    text-align: center;
+        
+}
+
+/*My first project given more importance with double grid column layout and first positioning. given a box-shadow to show as a clickable element.*/
+#horiseon{
+    grid-column: 1  /span 2;
+    height: 350px;
+    width: 800px;
+    border-color: black;
+    border-width: 5px;
+    border-style: groove;
+    border-width: 1px;
+    margin-left: 200px;
+    box-shadow: 10px 10px lightblue;
+}
+
+/*Rock-climbing image insside of div container.*/
+#top-img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Title quote underneath image with a background color to separate from the rest of the content.*/
+#title-quote{
+    color: #13293d;
+    top: 8px;
+    right: 16px;
+    background-color: chocolate;
+    border-style:double;
+    border-color: lightblue;
+    margin-bottom: 10px;
+}
+/*The alignment of my the projects not linked in my portfolio.*/
+.projects{
+    margin-left: 200px;
+}
