@@ -11,11 +11,11 @@ function Navigation (props) {
                     <h1>Devin Belle</h1>
                         <div>   
                             <ul class="portfolio-links">
-                                <li><p className={props.selectedPage == "About" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("About");}}><a href="#Home">Home</a></p></li>
-                                <li><p className={props.selectedPage == "About" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("About");}}><a href="#About-Me">About</a></p></li>
-                                <li><p className={props.selectedPage == "Portfolio" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("Portfolio");}}><a href="#Projecs">Projects</a></p></li>
-                                <li><p className={props.selectedPage == "Resume" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("Resme");}}><a href="#Resume">Resume</a></p></li>
-                                <li><p className={props.selectedPage == "Contact" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("Contact");}}><a href="#Contact">Contact</a></p></li>
+                                <li><p className={props.currentPage == "About" ? "selected nav-item" : "nav-item"} onClick={() => {props.setCurrentPage("About");}}><a href="#Home">Home</a></p></li>
+                                <li><p className={props.currentPage == "About" ? "selected nav-item" : "nav-item"} onClick={() => {props.setCurrentPage("About");}}><a href="#About-Me">About</a></p></li>
+                                <li><p className={props.currentPage == "Portfolio" ? "selected nav-item" : "nav-item"} onClick={() => {props.setCurrentPage("Portfolio");}}><a href="#Projects">Projects</a></p></li>
+                                <li><p className={props.currentPage == "Resume" ? "selected nav-item" : "nav-item"} onClick={() => {props.setCurrentPage("Resume");}}><a href="#Resume">Resume</a></p></li>
+                                <li><p className={props.currentPage == "Contact" ? "selected nav-item" : "nav-item"} onClick={() => {props.setCurrentPage("Contact");}}><a href="#Contact">Contact</a></p></li>
                                 <li id="copyright">&copy; All Rights Reserved</li>
                             </ul>
                         </div>
