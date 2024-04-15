@@ -1,6 +1,7 @@
 import React from "react";
 import profileImg from "../assets/Devin-profile-pic.png";
 
+
 function Navigation (props) {
     return(
         <nav class="side-nav">
@@ -10,10 +11,11 @@ function Navigation (props) {
                     <h1>Devin Belle</h1>
                         <div>   
                             <ul class="portfolio-links">
-                                <li><p><a href="#home">Home</a></p></li>
-                                <li><p><a href="#about-me">About</a></p></li>
-                                <li><p><a href="#content">Projects</a></p></li>
-                                <li><p><a href="#contact-me">Contact</a></p></li>
+                                <li><p className={props.selectedPage == "About" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("About");}}><a href="#Home">Home</a></p></li>
+                                <li><p className={props.selectedPage == "About" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("About");}}><a href="#About-Me">About</a></p></li>
+                                <li><p className={props.selectedPage == "Portfolio" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("Portfolio");}}><a href="#Projecs">Projects</a></p></li>
+                                <li><p className={props.selectedPage == "Resume" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("Resme");}}><a href="#Resume">Resume</a></p></li>
+                                <li><p className={props.selectedPage == "Contact" ? "selected nav-item" : "nav-item"} onClick={() => {props.setSelectedPage("Contact");}}><a href="#Contact">Contact</a></p></li>
                                 <li id="copyright">&copy; All Rights Reserved</li>
                             </ul>
                         </div>
