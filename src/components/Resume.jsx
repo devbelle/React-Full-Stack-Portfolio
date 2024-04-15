@@ -1,5 +1,5 @@
 import React from "react";
-import MyResume from "../pdf/Devin-Belle-Resume";
+//import MyResume from "../pdf/Devin-Belle-Resume";
 
 function Resume() {
     return(
@@ -7,7 +7,7 @@ function Resume() {
     <h1 className="resume">Devin Belle's Resume</h1>
         <hr></hr>
 
-    <ReactPDF file={{data: MyResume}}/>
+    <a href="https://docs.google.com/document/d/1BBYNCbd8tvP1b9AqB7bzxyJXRrc1d-D2rDkUdiy1MNw/edit?usp=sharing">Resume</a>
 
     {/* <iframe src={MyResume} width="100%" height="800px"></iframe> */}
 

@@ -1,11 +1,11 @@
 import React from "react";
-import profileImg from "../assets/Profile-pic.JPG"
+import profileImg from "../assets/Devin-profile-pic.png";
 
 function Navigation (props) {
     return(
         <nav class="side-nav">
         <div>
-            {/* <img src={profileImg} alt="Devin" class="devin"> */}
+            <img src={profileImg} alt="Devin" class="devin" />
                 <div>
                     <h1>Devin Belle</h1>
                         <div>   
