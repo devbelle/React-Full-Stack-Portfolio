@@ -10,7 +10,7 @@ To access, copy the repository in github, then use the git clone function in com
 
 Link below:
 
-https://devbelle.github.io/Full-Stack-Portfolio/
+https://incomparable-mooncake-33bf82.netlify.app/#Home
 
 Screenshot
 
